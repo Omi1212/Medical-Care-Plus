@@ -1,0 +1,16 @@
+.reminder-card {
+  padding: 2rem;
+  justify-self: center;
+  border: 2px solid #5925DC;
+  border-radius: 25px;
+  width: 90%;
+  height: 300px;
+  line-height: 25px;
+}
+.reminder-card .reminder-text-label {
+  font-size: auto;
+}
+.reminder-card .date-text-label {
+  position: relative;
+  top: 80px;
+}/*# sourceMappingURL=reminder-card.css.map */

@@ -1,0 +1,29 @@
+$font: "Urbanist", sans-serif;
+
+.dashboard {
+    max-width: 1280px;
+    margin: 1rem auto;
+    padding: 2rem;
+    font: 100%, "Urbanist";
+}
+
+label{
+    font-family: $font;
+    display: block;
+}
+
+.reminder-title{
+    font-size: 2rem;
+}
+
+.reminder-container{
+    padding: 3rem;
+    .reminder-container-grid{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+        column-gap: 10px;
+        row-gap: 50px;
+        align-items: center;
+    }
+}

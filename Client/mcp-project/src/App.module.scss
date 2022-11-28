@@ -1,0 +1,22 @@
+@import "./variables";
+
+body > section {
+  width: 100%;
+  display: flex;
+  /* min-height: 100vh; */
+  padding: 8rem 5rem;
+  flex-direction: column;
+
+  &:nth-last-child(even) {
+    background: $theme-section-color;
+  }
+}
+
+p {
+  color: $theme-paragraph-color;
+}
+
+span {
+  letter-spacing: 2px;
+  color: $theme-primary-color;
+}

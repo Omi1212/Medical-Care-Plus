@@ -1,0 +1,127 @@
+@import "../../../mixins";
+@import "../../../variables";
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 60%;
+  z-index: 1;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url(../../../assets/img/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.title {
+  z-index: 2;
+  h1 {
+    font-size: 5rem;
+    color: $theme-accent-color;
+    font-family: "Urbanist", sans-serif;
+  }
+}
+
+.left-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    gap: 2rem;
+  
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .back-home {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    a {
+      cursor: pointer;
+
+      i {
+        font-size: 2rem;
+        color: $theme-primary-color;
+      }
+    }
+  }
+}
+
+
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .input-password {
+    display: flex;
+    gap: 1rem;
+  }
+
+  input {
+    width: auto;
+    box-sizing: border-box;
+    background-color: $theme-accent-color;
+    outline: 0 none;
+    padding: 1rem;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 0.2rem;
+
+    &:focus {
+      border: 1px solid $theme-primary-color;
+    }
+  }
+}
+
+.btn-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .btn-signin {
+    @include s1-button;
+    background: $theme-accent-color;
+    border: 1px solid $theme-primary-color;
+    color: $theme-primary-color;
+
+    &:hover {
+      background: $theme-primary-color;
+      color: $theme-accent-color;
+    }
+
+    &:active {
+      background: $theme-color-hover;
+    }
+  }
+
+  .btn-signup {
+    @include s1-button;
+  }
+}

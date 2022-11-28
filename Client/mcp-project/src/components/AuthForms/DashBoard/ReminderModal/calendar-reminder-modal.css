@@ -1,0 +1,99 @@
+.calendar-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  border-radius: 15px;
+}
+.calendar-modal-content form {
+  display: block;
+}
+.calendar-modal-content .modal-title {
+  justify-self: center;
+  background-color: #5925DC;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 25px;
+  color: #fefefe;
+  padding: 1rem;
+  width: auto;
+}
+.calendar-modal-content .input-container {
+  padding: 1rem;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.calendar-modal-content .input-container label {
+  font-size: 20px;
+  line-height: 25px;
+}
+.calendar-modal-content .input-container .title-input {
+  font-family: "Urbanist";
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+}
+.calendar-modal-content .input-container .description-area {
+  font-family: "Urbanist";
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+}
+.calendar-modal-content .calendar-container {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  font-family: "Urbanist";
+  padding: 2rem;
+}
+.calendar-modal-content .calendar-container label {
+  font-size: 20px;
+  line-height: 25px;
+}
+.calendar-modal-content .calendar-container .react-calendar {
+  align-self: center;
+  justify-self: center;
+}
+.calendar-modal-content .btn-container {
+  display: flex;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  justify-content: end;
+}
+.calendar-modal-content .btn-container .btn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}/*# sourceMappingURL=calendar-reminder-modal.css.map */

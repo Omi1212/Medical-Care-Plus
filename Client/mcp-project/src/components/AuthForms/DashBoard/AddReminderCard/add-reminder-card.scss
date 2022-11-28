@@ -1,0 +1,19 @@
+.add-reminder-card{
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+    background-color: #5925DC;
+    border-radius: 25px;
+    width: 90%;
+    height: 300px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        width: auto;
+        max-width: 150px;
+        filter: invert(100%);
+    }
+}
