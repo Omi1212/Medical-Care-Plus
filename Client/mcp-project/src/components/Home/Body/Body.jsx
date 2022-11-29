@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./Body.module.scss";
+import imagePrincipal from "../../../assets/img/work-home-img.jpg";
+import imageSecondary from "../../../assets/img/istockphoto-1173258771-612x612.jpg";
 
 function Body() {
   return (
@@ -18,7 +20,7 @@ function Body() {
         </div>
         <div className={classes["right-container"]}>
           <figure>
-            <img src="./src/assets/img/work-home-img.jpg" alt="" />
+            <img src={imagePrincipal} alt="Image container" />
           </figure>
         </div>
       </section>
@@ -65,7 +67,7 @@ function Body() {
         <div className={classes["container-img"]}>
           <figure>
             <img
-              src="src/assets/img/istockphoto-1173258771-612x612.jpg"
+              src={imageSecondary}
               alt=""
             />
           </figure>
