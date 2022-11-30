@@ -51,7 +51,7 @@
     align-items: flex-start;
     width: auto;
     gap: 2rem;
-  
+
     h1 {
       font-size: 3rem;
     }
@@ -72,8 +72,6 @@
     }
   }
 }
-
-
 
 .input-form {
   display: flex;
@@ -124,4 +122,86 @@
   .btn-signup {
     @include s1-button;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .right-container {
+    display: none;
+  }
+
+  .container{
+    height: 100vh;
+  }
+  .left-container{
+    height: 100vh;
+
+    form{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .input-form{
+    input{
+      width: 250px;
+    }
+
+    .input-password{
+      flex-direction: column;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .right-container {
+    display: none;
+  }
+
+  .container{
+    height: 100vh;
+  }
+  .left-container{
+    height: 100vh;
+
+    form{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .input-form{
+    input{
+      width: 300px;
+    }
+
+    .input-password{
+      flex-direction: column;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

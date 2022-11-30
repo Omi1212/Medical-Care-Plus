@@ -24,6 +24,15 @@ const LoginForm = () => {
     navigate("/auth/dashboard");
   }
 
+  function handleSignoutClick() {
+    const token = gapi.client.getToken();
+    if (token !== null) {
+      google.accounts.oauth2.revoke(token.access_token);
+      gapi.client.setToken('');
+      navigate("/auth/signup");
+    }
+  }
+
   useEffect(() => {
     /* global google */
     const google = window.google;
@@ -68,7 +77,7 @@ const LoginForm = () => {
               <label>
                 <input type="checkbox" /> Remember me on this site?
               </label>
-              <button onClick={() => navigate("/auth/dashboard")}>Sign in</button>
+              <button>Sign in</button>
               <div id="signIn"></div>
             </div>
           </div>
@@ -77,7 +86,7 @@ const LoginForm = () => {
             <p>
               Still not joining us? Don't worry, click here to join the family
             </p>
-            <button onClick={() => navigate("/auth/signup")}>Sign up</button>
+            <button onClick={handleSignoutClick}>Sign up</button>
           </div>
         </form>
       </div>

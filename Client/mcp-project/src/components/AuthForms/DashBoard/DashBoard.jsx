@@ -6,6 +6,8 @@ import "./AddReminderCard/add-reminder-card.css";
 import ReminderModal from "./ReminderModal/ReminderModal";
 import "./reminders-container.css";
 import Header from "./HeaderDashboard/HeaderDashboard";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 Modal.setAppElement("#root");
 
@@ -14,9 +16,10 @@ const DashBoard = () => {
 
   return (
     <div>
+    <ToastContainer />
     <Header/>
       <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-        <ReminderModal />
+        <ReminderModal/>
       </Modal>
       <div className="dashboard">
         <label className="reminder-title">Reminders...</label>

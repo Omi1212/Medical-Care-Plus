@@ -3,6 +3,7 @@
 
 header {
   display: flex;
+  position: static;
   padding: 1rem 4rem;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -4px;
   background-color: $theme-accent-color;
